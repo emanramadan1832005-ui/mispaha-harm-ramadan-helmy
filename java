@@ -1,0 +1,53 @@
+# mispaha-harm-ramadan-helmy
+Lavander
+// إعداد الصفحة
+document.body.style.margin = "0";
+document.body.style.fontFamily = "Arial, sans-serif";
+document.body.style.textAlign = "center";
+document.body.style.backgroundColor = "#E6E6FA";
+document.body.style.paddingTop = "60px";
+
+// العناوين
+const title = document.createElement("h1");
+title.innerText = "مسبحة صدقة جارية";
+title.style.color = "#4B0082";
+
+const text1 = document.createElement("h2");
+text1.innerText = "عن روح";
+text1.style.color = "#5A4E7C";
+
+const text2 = document.createElement("h2");
+text2.innerText = "حرم المرحوم رمضان حلمي";
+text2.style.color = "#5A4E7C";
+
+// العداد
+let count = 0;
+const counter = document.createElement("div");
+counter.innerText = count;
+counter.style.fontSize = "60px";
+counter.style.color = "#4B0082";
+counter.style.margin = "30px 0";
+
+// زر التسبيح
+const button = document.createElement("button");
+button.innerText = "سبحان الله";
+button.style.fontSize = "22px";
+button.style.padding = "15px 35px";
+button.style.border = "none";
+button.style.borderRadius = "12px";
+button.style.backgroundColor = "#C3B1E1";
+button.style.color = "#2F2F4F";
+button.style.cursor = "pointer";
+button.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+
+button.onclick = function () {
+  count++;
+  counter.innerText = count;
+};
+
+// إضافة العناصر للصفحة
+document.body.appendChild(title);
+document.body.appendChild(text1);
+document.body.appendChild(text2);
+document.body.appendChild(counter);
+document.body.appendChild(button);
